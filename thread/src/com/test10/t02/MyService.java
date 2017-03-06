@@ -12,7 +12,7 @@ public class MyService {
 		
 		try{
 		lock.lock();
-		System.out.println("begin waitA的时间为："+System.currentTimeMillis()+"ThreadName="+Thread.currentThread().getName());
+		System.out.println("begin waitB的时间为："+System.currentTimeMillis()+"ThreadName="+Thread.currentThread().getName());
 		condition.await();
 		System.out.println("end waitA的时间为："+System.currentTimeMillis()+"ThreadName="+Thread.currentThread().getName());
 		
